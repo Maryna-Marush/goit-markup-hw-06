@@ -974,15 +974,26 @@ nav {
 
 
 /* mobile */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .header-nav,
     .address {
         display: none;
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 28px;
+        margin-right: 28px;
+         }
 
-  .menu-open-btn {
-      display: block;
-  }
 }
 
 
