@@ -983,9 +983,9 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-    .header-nav,
-    .address {
-        display: none;
+    .page-nav,
+    .address-page {
+        visibility: hidden;
     }
     .container {
         display: flex;
@@ -993,15 +993,16 @@ nav {
         margin-left: 28px;
         margin-right: 28px;
          }
+    .features-icon {
+        display: none;
+    }
+    .features-list {
+        flex-direction: column;
+    }
 
 }
 
 
-.mobile-socials {
-    display: flex;
-    gap: 40px;
-    margin-top: 48px;
-}
 
 @media screen and (min-width: 768px) {
 
