@@ -269,15 +269,20 @@ nav {
 
 .features {
     background-color: #ffffff;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .features-list {
     display: flex;
-    gap: 24px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
 
+    /* додала */
+    flex-wrap: wrap;
+    gap: 24px;
+
+    
+    /* flex-wrap: nowrap; */
+
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 
@@ -286,15 +291,24 @@ nav {
 
 .features-title {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    text-align: left;
+
+    /* line-height: 1.2; */
+    /* font-weight: 500; */
+    /* text-align: left; */
+    /* font-size: 20px; */
+
+    /* додала */
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
 
 }
+
 
 .visually-hidden {
     position: absolute;
@@ -321,35 +335,45 @@ nav {
 
 
 .features-section {
-    flex: calc((100% - 72px) / 4);
+    /* flex: calc((100% - 72px) / 4); */
+    width: 100%;
 }
 
 
 .box-icon {
-    display: flex;
+    display: none;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     height: 112px;
     background-color: #f4f4fd;
     border-radius: 4px;
     border: 1px solid #8e8f99;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
 }
 
 .text {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #434455;
     text-align: left;
+
+    /* додала */
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    
+
 
 }
 
 
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
 
+    /* padding: 120px 0; */
+
+    /* plus */
+    padding: 96px 0;
 }
 
 .section-title {
@@ -360,6 +384,10 @@ nav {
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
+
+
+    /* додала */
+    font-weight: 700;
 
 }
 
@@ -375,22 +403,33 @@ nav {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
+    gap: 72px;
 
+    /* plus */
+    flex-direction: column;
+    align-items: center;
+    padding: 28px;
+    
 
-    justify-content: center;
+    /* justify-content: center; */
 
 }
 
 .team-members {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 72px) / 4);
+
+    /* flex-basis: calc((100% - 72px) / 4); */
+    
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 
-
+        
+        
+        /* plus */  
+    width: 100%;
 }
 
 
@@ -968,4 +1007,57 @@ nav {
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
+}
+
+
+/* Медіазапити */
+
+@media screen and (min-width: 768px) {
+    .features-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 24px;
+            row-gap: 72px;
+        }
+    
+        .features-section {
+            width: calc((100% - 24px) / 2);
+        }
+    
+        .features-title {
+            text-align: left;
+            font-size: 36px;
+        }
+}
+
+    
+@media (min-width: 1158px) {
+    .features {
+        padding: 120px 0;
+        }
+
+    .features-list {
+        flex-wrap: nowrap;
+        }
+
+    .features-title {
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: left;
+    font-size: 20px;  
+    }
+
+    .features-section {
+        flex: calc((100% - 72px) / 4);
+                }
+    .box-icon {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
+    }
 }
