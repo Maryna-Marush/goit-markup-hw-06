@@ -992,11 +992,14 @@ nav {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: inline-block;
+    /* display: inline-block; */
     gap: 8px;
     align-items: center;
     cursor: pointer;
-    
+
+    /* plus */
+   display: flex;
+   align-items: flex-start;
 }
 
 .policy-link-checkbox {
@@ -1011,8 +1014,13 @@ nav {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    /* plus */
+    flex-shrink: 0;
 
+}
 
+.policy-text-content {
+    display: inline;
 }
 
 .policy-link {
