@@ -84,7 +84,7 @@ nav {
 
 
 .page-nav {
-    display: flex;
+    /* display: flex;
     gap: 40px;
     font-size: 16px;
     line-height: 1.5;
@@ -92,7 +92,10 @@ nav {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin: 0;
-    padding-left: 0;
+    padding-left: 0; */
+    
+    /* plus */
+display: none;
 
 
 
@@ -191,10 +194,32 @@ nav {
 
 .address-page {
     font-style: normal;
+    
+    /* plus */
+    display: none;
 
 }
 
+/* .menu-open-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+}
 
+.mobile-menu {
+    position: fixed;
+    background-color: #fff;
+    width: 320px;
+    height: 640px;
+} */
+
+
+
+
+
+/* stop */
 .address-link {
     text-decoration: none;
     font-size: 16px;
@@ -1127,6 +1152,42 @@ nav {
                                     width: 408px;
                                     min-height: 584px;
                                 }
+    /* plus */
+        .menu-open-btn {
+            display: none;
+        }
+        .page-nav {
+        display: flex;
+        gap: 40px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin: 0;
+        padding-left: 0;
+    }
+
+        .address-page {
+        display: flex;  
+    }
+        .mobile-menu {
+            display: none;
+        }
+/* plus 28.12 */
+        .address-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-right: 16px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        .address-link {
+            font-size: 12px;
+            line-height: 1.166;
+            letter-spacing: 0.04em;
+        }
 }
 
     
@@ -1207,6 +1268,46 @@ nav {
         .social-media-title,
         .subscribe-title {
             text-align: left;
+        }
+
+
+
+        /* plus */
+         .menu-open-btn {
+            display: none;
+        }
+
+        .page-nav {
+        display: flex;
+        gap: 40px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin: 0;
+        padding-left: 0;
+    }
+
+        .address-page {
+        display: flex;
+    }
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-open-btn {
+                display: none;
+            }
+
+    /* plus 28.12 */
+        .address-list {
+            flex-direction: row;
+            gap: 40px;
+        }
+        .address-link {
+            font-size: 16px;
+            line-height: 1.5;
         }
 
 }
