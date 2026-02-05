@@ -179,8 +179,14 @@ display: none;
     background-color: #FFFFFF;
     padding: 0;
     cursor: pointer;
-    fill: #2E2F42;
     
+}
+
+.menu-open-btn:hover,
+.menu-open-btn:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
 }
 
 
@@ -240,9 +246,9 @@ display: none;
 }
 .menu-close-btn:hover,
 .menu-close-btn:focus {
-    background-color: #404bbf;
+    background-color: #FFFFFF;
     border: none;
-    fill: #ffffff;
+    fill: #404bbf;
 }
 
 .mobile-page-nav {
@@ -301,13 +307,19 @@ display: none;
     color: #404bbf;
 }
 
-.mobile-address-tel,
+
 .mobile-address-email {
     display: block;
     text-decoration: none;
     font-style: normal;
     color: #2E2F42;
 }
+.mobile-address-tel {
+    display: block;
+    text-decoration: none;
+}
+
+
 
 .mobile-social {
     display: flex;
@@ -374,12 +386,18 @@ display: none;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url("../images/img11.jpg");
+        url("../images/img-mobile-logo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
+    
+    @media screen and (min-resolution: 2x), (-webkit-min-divice-pixel-ratio: 2) {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url("../images/img-mobile-logo-2x.jpg")
+        }
 }
 
 .hero-title {
@@ -1196,6 +1214,20 @@ display: none;
             line-height: 1.166;
             letter-spacing: 0.04em;
         }
+
+        /* plus */
+        .page-title {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url("../images/img-tabl-logo.jpg");
+
+                    @media screen and (min-resolution: 2x),
+                        (-webkit-min-divice-pixel-ratio: 2) {
+                            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                                    rgba(46, 47, 66, 0.7)),
+                                url("../images/img-tab-logo-2x.jpg")
+                        }
+        }
 }
 
     
@@ -1312,6 +1344,19 @@ display: none;
         .address-link {
             font-size: 16px;
             line-height: 1.5;
+        }
+
+        .page-title {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url("../images/img11.jpg");
+
+                    @media screen and (min-resolution: 2x),
+                        (-webkit-min-divice-pixel-ratio: 2) {
+                            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                                    rgba(46, 47, 66, 0.7)),
+                                url("../images/img11-2x.jpg")
+                        }
         }
 
 }
