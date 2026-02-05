@@ -1137,6 +1137,8 @@ display: none;
             flex-wrap: wrap;
             gap: 64px 24px;
             justify-content: center;
+            padding-left: 108px;
+            padding-right: 108px;
         }
         
         .team-members {
@@ -1269,6 +1271,7 @@ display: none;
         flex-wrap: nowrap;
         gap: 24px;
         justify-content: center;
+        padding: 0;
     }
     
     .team-members {
