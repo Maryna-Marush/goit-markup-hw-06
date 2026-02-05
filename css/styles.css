@@ -165,6 +165,24 @@ display: none;
     
 
 }
+.menu-open-btn {
+    display: flex;
+    visibility: visible;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: 0;
+    cursor: pointer;
+    fill: #2E2F42;
+    
+}
+
 
 .mobile-menu {
     position: fixed;
@@ -211,7 +229,6 @@ display: none;
         height: 24px;
         border-radius: 50%;
         align-items: center;
-        justify-content: center;
         background-color: #e7e9fc;
         border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 0;
