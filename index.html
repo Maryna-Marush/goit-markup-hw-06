@@ -55,69 +55,13 @@
 
       <button type="button" class="menu-open-btn">
         <svg width="24" height="24">
-          <use href="./images/symbol-defs.svg#icon-burger"></use>
+          <use href="./images/icons.svg#icon-burger"></use>
         </svg>
       </button>
       </div>
       <!-- end -->
 
-        <!-- Модальне вікно мобільного меню -->
-        <div class="mobile-menu is-open">
-          <button type="button" class="menu-close-btn">
-            <svg width="8" height="8">
-              <use href="./images/icons.svg#icon-cclose"></use>
-            </svg>
-           </button>
-
-          <div class="mobile-menu-content">
-            <nav class="mobile-nav">
-              <ul class="mobile-page-nav">
-                <li><a href="./index.html" class="mobile-nav-link current">Studio</a></li>
-                <li><a href="" class="mobile-nav-link ">Portfolio</a></li>
-                <li><a href="" class="mobile-nav-link ">Contacts</a></li>
-              </ul>
-            </nav>
         
-            <address class="mobile-address">
-              <ul class="mobile-address-list">
-                <li><a href="tel:+110001111111" class="mobile-address-tel">+11 (000) 111-11-11</a></li>
-                <li><a href="mailto:info@devstudio.com" class="mobile-address-email">info@devstudio.com</a></li>
-              </ul>
-              </address>
-
-            <ul class="mobile-social">
-              <li class="mobile-social-items">
-                <a class="mobile-social-links" target="_blank" href="./index.html">
-                  <svg class="mobile-social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-social-items">
-                <a class="mobile-social-links" target="_blank" href="./index.html">
-                  <svg class="mobile-social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-social-items">
-                <a class="mobile-social-links" target="_blank" href="./index.html">
-                  <svg class="mobile-social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-social-items">
-                <a class="mobile-social-links" target="_blank" href="./index.html">
-                  <svg class="mobile-social-icons" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin2"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-<!-- end -->
   </header>
 
   <main>
@@ -377,17 +321,18 @@
             <div class="portfolio-img-wrapper">
               
               <picture>
-                <source
-                srcset="./images/img-app-mob1.jpg 1x, ./images/img-app-mob1-2x.jpg 2x"
-                media="(max-width: 768px)"
+                
+                <source srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x" media="(min-width: 1158px)">
+                
+                <source srcset="./images/img-app-tab1.jpg 1x, ./images/img-app-tab1-2x.jpg 2x" media="(min-width: 768px)">
+               
+                <source srcset="./images/img-app-mob1.jpg 1x, ./images/img-app-mob1-2x.jpg 2x" media="(max-width: 767px)">
+        
+                <img src="./images/img-app-mob1.jpg" 
+                alt="Banking App" 
+                width="360" 
+                height="300"
                 />
-                <source srcset="./images/img-app-tab1.jpg 1x, ./images/img-app-tab1-2x.jpg 2x" 
-                media="(max-width: 1155px)"
-                />
-                <source srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x" 
-                media="(min-width: 1156px)"
-                />
-                <img src="./images/img5.jpg" alt="Banking App" />
               </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App ·
@@ -403,13 +348,16 @@
           <li class="portfolio-items">
             <div class="portfolio-img-wrapper">
               <picture>
-                <source srcset="./images/img-app-mob2.jpg 1x, ./images/img-app-mob2-2x.jpg 2x" 
-                media="(max-width: 768px)" />
-                <source srcset="./images/img-app-tab2.jpg 1x, ./images/img-app-tab2-2x.jpg 2x" 
-                media="(max-width: 1155px)" />
-                <source srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x" 
-                media="(min-width: 1156px)" />
-                <img src="./images/img6.jpg" alt="Cashless Payment" />
+                
+                <source srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x" media="(min-width: 1158px)" />
+                
+                <source srcset="./images/img-app-tab2.jpg 1x, ./images/img-app-tab2-2x.jpg 2x" media="(min-width: 768px)" />
+                
+                <source srcset="./images/img-app-mob2.jpg 1x, ./images/img-app-mob2-2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/img-app-mob2.jpg" 
+                alt="Cashless Payment" 
+                width="360" height="300"
+                />
               </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App ·
@@ -426,15 +374,20 @@
           <li class="portfolio-items">
             <div class="portfolio-img-wrapper">
 
-              <picture>
-                <source srcset="./images/img-app-mob3.jpg 1x, ./images/img-app-mob3-2x.jpg 2x" 
-                media="(max-width: 768px)" />
-                <source srcset="./images/img-app-tab3.jpg 1x, ./images/img-app-tab3-2x.jpg 2x" 
-                media="(max-width: 1155px)" />
-                <source srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x" 
-                media="(min-width: 1156px)" />
-                <img src="./images/img7.jpg" alt="Meditation App" />
-              </picture>
+            <picture>
+              
+              <source srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x" media="(min-width: 1158px)" />
+              
+              <source srcset="./images/img-app-tab3.jpg 1x, ./images/img-app-tab3-2x.jpg 2x" media="(min-width: 768px)" />
+              
+              <source srcset="./images/img-app-mob3.jpg 1x, ./images/img-app-mob3-2x.jpg 2x" media="(max-width: 767px)" />
+              
+              <img src="./images/img-app-mob3.jpg" 
+              alt="Meditation App" 
+              width="360" 
+              height="300" 
+              />
+            </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App ·
                 Exotic Fruit Ecommerce App · Cloud Storage App
@@ -451,14 +404,20 @@
             <div class="portfolio-img-wrapper">
 
               <picture>
-                <source srcset="./images/img-app-mob4.jpg 1x, ./images/img-app-mob4-2x.jpg 2x" 
-                media="(max-width: 768px)" />
-                <source srcset="./images/img-app-tab4.jpg 1x, ./images/img-app-tab4-2x.jpg 2x" 
-                media="(max-width: 1155px)" />
-                <source srcset="./images/img8.jpg 1x, ./images/img8-2x.jpg 2x" 
-                media="(min-width: 1156px)" />
-                <img src="./images/img8.jpg" alt="Taxi Service" />
-              </picture>
+                <picture>
+                  
+                  <source srcset="./images/img8.jpg 1x, ./images/img8-2x.jpg 2x" media="(min-width: 1158px)" />
+                  
+                  <source srcset="./images/img-app-tab4.jpg 1x, ./images/img-app-tab4-2x.jpg 2x" media="(min-width: 768px)" />
+                  
+                  <source srcset="./images/img-app-mob4.jpg 1x, ./images/img-app-mob4-2x.jpg 2x" media="(max-width: 767px)" />
+                  
+                  <img src="./images/img-app-mob4.jpg" 
+                  alt="Taxi Service" 
+                  width="360" 
+                  height="300" 
+                  />
+                </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App ·
                 Exotic Fruit Ecommerce App · Cloud Storage App
@@ -476,13 +435,18 @@
             <div class="portfolio-img-wrapper">
 
               <picture>
-                <source srcset="./images/img-app-mob5.jpg 1x, ./images/img-app-mob5-2x.jpg 2x" 
-                media="(max-width: 768px)" />
-                <source srcset="./images/img-app-tab5.jpg 1x, ./images/img-app-tab5-2x.jpg 2x" 
-                media="(max-width: 1155px)" />
-                <source srcset="./images/img9.jpg 1x, ./images/img9-2x.jpg 2x" 
-                media="(min-width: 1156px)" />
-                <img src="./images/img9.jpg" alt="screen illustrations" />
+                
+                <source srcset="./images/img9.jpg 1x, ./images/img9-2x.jpg 2x" media="(min-width: 1158px)" />
+                
+                <source srcset="./images/img-app-tab5.jpg 1x, ./images/img-app-tab5-2x.jpg 2x" media="(min-width: 768px)" />
+                
+                <source srcset="./images/img-app-mob5.jpg 1x, ./images/img-app-mob5-2x.jpg 2x" media="(max-width: 767px)" />
+                
+                <img src="./images/img-app-mob5.jpg" 
+                alt="screen illustrations" 
+                width="360" 
+                height="300" 
+                 />
               </picture>
 
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -501,14 +465,19 @@
             <div class="portfolio-img-wrapper">
 
               <picture>
-                <source srcset="./images/img-app-mob6.jpg 1x, ./images/img-app-mob6-2x.jpg 2x" 
-                media="(max-width: 768px)" />
-                <source srcset="./images/img-app-tab6.jpg 1x, ./images/img-app-tab6-2x.jpg 2x" 
-                media="(max-width: 1155px)" />
-                <source srcset="./images/img10.jpg 1x, ./images/img10-2x.jpg 2x" 
-                media="(min-width: 1156px)" />
-
-              <img src="./images/img10.jpg" alt="Online Courses" />
+                
+                <source srcset="./images/img10.jpg 1x, ./images/img10-2x.jpg 2x" media="(min-width: 1158px)" />
+                
+                <source srcset="./images/img-app-tab6.jpg 1x, ./images/img-app-tab6-2x.jpg 2x" media="(min-width: 768px)" />
+                
+                <source srcset="./images/img-app-mob6.jpg 1x, ./images/img-app-mob6-2x.jpg 2x" media="(max-width: 767px)" />
+                
+                <img src="./images/img10.jpg" 
+                alt="Online Courses" 
+                width="360" 
+                height="300" 
+                />
+              </picture>
 
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App ·
@@ -595,6 +564,64 @@
       </div>
     </div>
   </footer>
+
+  <!-- Модальне вікно мобільного меню -->
+  <div class="mobile-menu is-open">
+    <button type="button" class="menu-close-btn">
+      <svg width="8" height="8">
+        <use href="./images/icons.svg#icon-cclose"></use>
+      </svg>
+    </button>
+  
+    <div class="mobile-menu-content">
+      <nav class="mobile-nav">
+        <ul class="mobile-page-nav">
+          <li><a href="./index.html" class="mobile-nav-link current">Studio</a></li>
+          <li><a href="" class="mobile-nav-link ">Portfolio</a></li>
+          <li><a href="" class="mobile-nav-link ">Contacts</a></li>
+        </ul>
+      </nav>
+  
+      <address class="mobile-address">
+        <ul class="mobile-address-list">
+          <li><a href="tel:+110001111111" class="mobile-address-tel">+11 (000) 111-11-11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="mobile-address-email">info@devstudio.com</a></li>
+        </ul>
+      </address>
+  
+      <ul class="mobile-social">
+        <li class="mobile-social-items">
+          <a class="mobile-social-links" target="_blank" href="./index.html">
+            <svg class="mobile-social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-items">
+          <a class="mobile-social-links" target="_blank" href="./index.html">
+            <svg class="mobile-social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-items">
+          <a class="mobile-social-links" target="_blank" href="./index.html">
+            <svg class="mobile-social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-items">
+          <a class="mobile-social-links" target="_blank" href="./index.html">
+            <svg class="mobile-social-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin2"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end -->
 
   <!-- modal window -->
   <div class="modal-overlay is-open">
