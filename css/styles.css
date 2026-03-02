@@ -264,8 +264,8 @@ display: none;
     margin-bottom: auto;
     list-style: none;
     padding: 0;
-    margin: 0;
-    margin-bottom: 168px;
+    /* margin: 0;
+    margin-bottom: 168px; */
 
 }
 
@@ -1234,7 +1234,10 @@ display: none;
         display: flex;  
     }
         .mobile-menu {
-            display: none;
+            /* display: none; */
+            display: flex;
+            flex-direction: column;
+            height: 100%
         }
 
         .address-list {
