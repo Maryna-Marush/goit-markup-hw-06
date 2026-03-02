@@ -75,11 +75,10 @@ nav {
 .container {
    
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
         /* plus 02.03 */
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 .page-nav {
@@ -461,8 +460,9 @@ display: none;
     gap: 72px;
     justify-content: space-between;
     margin: 0;
-    padding-left: 16px;
-    padding-right: 16px;
+    list-style: none;
+    /* padding-left: 16px;
+    padding-right: 16px; */
 
 }
 
@@ -734,7 +734,7 @@ display: none;
     background-color: #2e2f42;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .footer .container {
@@ -1269,6 +1269,7 @@ display: none;
         }
         .container {
             max-width: 768px;
+            padding: 0 16px;
         }
 }
 
@@ -1411,6 +1412,10 @@ display: none;
                     }
                     .container {
                         max-width: 1158px;
+                        padding: 0 15px;
                     }
+                .footer{
+                    padding: 100px 0;
+                }
 
 }
