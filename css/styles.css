@@ -843,7 +843,7 @@ ul {
 }
 
 .input-subscribe {
-    width: 100%;
+    width: 290px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -854,6 +854,7 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+    opacity: 1;
 
 }
 
