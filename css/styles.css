@@ -1148,8 +1148,9 @@ ul {
         flex-wrap: wrap;
         gap: 64px 24px;
         justify-content: center;
-        padding-left: 108px;
-        padding-right: 108px;
+        
+        /* padding-left: 108px;
+        padding-right: 108px; */
     }
     .team-list .container {
         padding: 0;
@@ -1165,8 +1166,8 @@ ul {
         
         
     .app {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
         gap: 24px;
     }
 
@@ -1174,7 +1175,6 @@ ul {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
-        width: 584px;
         gap: 72px 24px;
     }
 
@@ -1225,7 +1225,6 @@ ul {
     
     .mobile-menu {
         display: none;
-        display: flex;
         flex-direction: column;
         height: 100%
     }
@@ -1278,6 +1277,27 @@ ul {
         font-size: 56px;
         line-height: 1.07;
     }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .header .container {
+        margin-left: 0;
+        margin-right: 0;
+    }  
+     .portfolio .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .features .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+        /* .team .container {
+            margin-left: 0;
+            margin-right: 0;
+        } */
 }
 
 @media (min-width: 1158px) {
