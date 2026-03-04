@@ -1149,8 +1149,6 @@ ul {
         gap: 64px 24px;
         justify-content: center;
         
-        /* padding-left: 108px;
-        padding-right: 108px; */
     }
     .team-list .container {
         padding: 0;
@@ -1282,7 +1280,7 @@ ul {
         margin-left: 0;
     }
 
-    .header .container {
+    /* .header .container {
         margin-left: 0;
         margin-right: 0;
     }  
@@ -1293,7 +1291,7 @@ ul {
     .features .container {
         margin-left: 0;
         margin-right: 0;
-    }
+    } */
         /* .team .container {
             margin-left: 0;
             margin-right: 0;
