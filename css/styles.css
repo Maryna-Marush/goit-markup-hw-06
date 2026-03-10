@@ -219,10 +219,6 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 72px 16px 40px 16px;
-    /* padding-top: 72px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 40px; */
     overflow-y: auto;
     
 }
@@ -261,12 +257,17 @@ ul {
     fill: #404bbf;
 }
 
+/* plus 10.03 */
+.mobile-nav {
+    margin-bottom: 0;
+}
+
 .mobile-page-nav {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 168px;
     list-style: none;
+    margin: 0;
     padding: 0;
 
 }
@@ -292,7 +293,10 @@ ul {
     font-style: normal;
     flex-direction: column;
     gap: 24px;
-    /* padding-right: 16px; */
+    
+        /* Цmargin-bottom: 48px;
+            margin-top: auto; 10.03 */
+    padding-top: 168px;
     margin-bottom: 48px;
             
 }
@@ -492,7 +496,6 @@ ul {
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
-    /* padding-bottom: 72px; */
 }
 
 
@@ -614,6 +617,8 @@ ul {
 
 .portfolio {
     padding-top: 96px;
+    /* plus 10.03 */
+    padding-bottom: 96px;
 }
     
 .app {
@@ -927,9 +932,9 @@ ul {
     width: 288px;
     min-height: 623px;
 
-    /* padding: 72px 24px 24px 24px; */
+    
     /* plus 10.03 */
-    padding: 16px 24px 16px;
+    padding: 72px 16px 24px 16px;
 
 }
 
@@ -1173,6 +1178,13 @@ ul {
     .portfolio-items {
         width: calc((100% - 24px) / 2);
     }
+
+    /* plus 10.03 */
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        }
         
         
     .app {
@@ -1217,6 +1229,7 @@ ul {
         width: 408px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
+        
     }
  
     .menu-open-btn {
@@ -1237,6 +1250,12 @@ ul {
 
     .address-page {
         display: flex;  
+    }
+
+    .address-link {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
     }
     
     .mobile-menu {
@@ -1278,8 +1297,8 @@ ul {
     .container {
         max-width: 768px;
         /* plus  10.03*/
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 16px;
+        padding-right: 16px;
         margin: 0 auto;
     }
 
@@ -1331,6 +1350,16 @@ ul {
         /* flex: 0 0 calc((100% - 72px) / 4); */
         gap: 24px;
     }
+
+    /* plus 10.03 */
+
+        .features .text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
+        
     
     .box-icon {
         display: flex;
@@ -1373,6 +1402,8 @@ ul {
             display: flex;
             flex-wrap: wrap;
             column-gap: 24px;
+            /* plus 10.03 */
+            row-gap: 48px;
         }
 
     
@@ -1455,7 +1486,9 @@ ul {
     .address-link {
         font-size: 16px;
         line-height: 1.5;
-        padding: 24px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        padding: 24px 0;
     }
 
     .page-title {
