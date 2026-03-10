@@ -835,7 +835,7 @@ ul {
 
 .input-subscribe {
     
-    /* width: 290px; */
+    width: 290px;
     border: 1px solid #ffffff;
     background-color: transparent;
     font-size: 12px;
@@ -848,7 +848,7 @@ ul {
     /* opacity: 1; */
     
     /* plus 10.03 */
-    width: 100%;
+    /* width: 100%; */
     max-width: 290px;
     height: 40px;
 
@@ -1483,7 +1483,6 @@ ul {
          .footer .container {
              display: flex;
              align-items: baseline;
-             padding-left: 156px;
              /* width: 100%; */
              /* justify-content: space-between; */
              flex-wrap: nowrap;
