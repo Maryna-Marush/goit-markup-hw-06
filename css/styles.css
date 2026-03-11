@@ -61,7 +61,6 @@ img {
 
 ul {
     list-style: none;
-    /* plus 11.03 */
     padding: 0;
 }
 
@@ -219,8 +218,6 @@ ul {
     flex-direction: column;
     padding: 72px 16px 40px 16px;
     overflow-y: auto;
-
-    /* plus 11.03 */
     height: 100%;
     
 }
@@ -260,9 +257,7 @@ ul {
 }
 
 .mobile-nav {
-    /* plus 11.03 */
     margin-bottom: 40px;
-    /* margin-bottom: 0; */
 }
 
 .mobile-page-nav {
@@ -296,10 +291,7 @@ ul {
     font-style: normal;
     flex-direction: column;
     gap: 24px;
-    /* padding-top: 168px; */
     margin-bottom: 48px;
-    
-    /* plus 11.03 */
     margin-top: auto;
     font-style: normal;
             
@@ -587,7 +579,7 @@ ul {
     gap: 24px;
     margin-top: 16px;
     align-items: center;
-    /* padding: 16px; */
+
 
 }
 
@@ -627,14 +619,11 @@ ul {
 .app {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 24px; */
     row-gap: 48px;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
     padding: 0;
-
-    /* plus 11.03 */
     column-gap: 0;
 }
 
@@ -1104,20 +1093,31 @@ ul {
 .policy-checkbox:checked+.policy-text .policy-link-checkbox {
     background-color: var(--studio-link-color);
     border: none;
-    fill: var(--icon-fill);
+   
     
-
 }
 
 
-    /* plus 11.03 */
-/* .policy-checkbox:checked+.policy-text .policy-link-checkbox .modal-span-icon {
-    fill: var(--icon-fill) */
-
-        /* plus 11.03 */
+   
  .modal-span-icon {
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
     }
+
+        .policy-checkbox:checked+.policy-text .policy-link-checkbox {
+            background-color: #404bbf;
+            border: none;
+        }
+    
+        .policy-checkbox:checked+.policy-text .modal-span-icon {
+            opacity: 1;
+            fill: #F4F4FD;
+        }
+
+        .policy-link-checkbox {
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
     
     .send-button {
     display: block;
@@ -1191,7 +1191,6 @@ ul {
     .app {
         padding-left: 0;
         padding-right: 0;
-        /* gap: 24px; */
         row-gap: 72px;
         column-gap: 24px;
     } 
@@ -1536,7 +1535,6 @@ ul {
     .footer-subscribe {
         width: auto;
 
-        /* plus 11.03 */
         margin-left: 0;
     }
     .subscribe-title {
@@ -1547,7 +1545,6 @@ ul {
         margin-right: 76px;
     }
 
-    /* plus 11.03 */
 
     .app {
         row-gap: 48px;
